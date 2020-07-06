@@ -1,0 +1,133 @@
+.styleNight { 
+  background-color: #20003c; 
+}   
+   
+.styleNight a {
+  color: white; 
+}
+
+/**//**//* HEADER *//**//**/
+
+/* Header y titulos de las ventanas */
+   
+.styleNight .titulos {
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); 
+  box-shadow: 0 1px 0 0 #110038; 
+}
+
+/**//**//* NAVBAR *//**//**/
+
+/* Logo */
+   
+.styleNight .logo {
+  background-image: url("gifOS_UI/assets/gifOF_logo_dark.png");  
+}
+   
+/* Botones navbar */
+   
+.styleNight .navbarButton {
+  color: #FFFFFF; 
+  background: #EE3EFE;   
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;  
+}
+   
+/* Botones cambio de tema */
+   
+.styleNight .dropdown-content {
+  background-color: rgb(180, 180, 180);
+  box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;  
+}  
+
+.styleNight .cambioTema {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.styleNight .cambioTema:hover {
+  background: #2E32FB;
+  border: 1px solid rgba(51,53,143,0.20);
+  box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Boton Mis Gif */
+   
+.styleNight .misGifos {  
+  color: white;  
+}
+
+/**//**//* MAIN *//**//**/
+   
+/* Buscador de gif */
+
+.styleNight .buscador {
+  color: #FFFFFF;
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+   
+.styleNight .buscarButton {
+  background: #B4B4B4;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  color: #8F8F8F;
+}
+
+.styleNight .buscarButton:active {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;   
+}
+   
+.styleNight .buscador input[type=text] {
+  color: #B4B4B4;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+/* Botones desplegables del buscador */
+
+.styleNight #opcionesBuscador {
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.styleNight .botonOpciones {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.styleNight .botonOpciones:hover {   /* revisar si funciona */
+  border: 1px dotted #110038;
+}
+
+/* Buscadores */
+
+.styleNight .buscadores {
+  background: #FFFAFE;
+  border: 1px solid #2E32FB;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+   
+/* Ventanas de Gif sugeridos */
+
+.styleNight .ventanasGif{
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+/* Boton ver mas */
+
+.styleNight .verMas {
+  background: #2E32FB;
+  border: 1px solid #4C2F99;
+  box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.styleNight .tituloSugerencias {
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+

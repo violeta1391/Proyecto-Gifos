@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis GuifOS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="titulos">
+        <p class=paragraphTi>¡Bienvenidos/as a Gifos.com!------Donde los gif están.////// Número de visitas</p>
+    </header>
+
+    <navbar class="navbar">
+        <div class="volver">
+            <a href="./index.html"><img src="gifOS_UI/assets/arrow.svg" alt="flecha de regreso"></a>
+            <div class="logo" id="logoMisGifs"></div>
+        </div>
+    </navbar>
+
+    <main>
+        <section class="crearGifs" id="crearGifs">
+
+            <div class="crearGifsTitle" id="crearGifsTitle">
+                <p id="pCrear"><b>Crear Guifos</b></p>
+                <img id="cerrar" src="./gifOS_UI/assets/button close.svg" alt="boton cerrar">
+            </div>
+
+            <img id="imgForward" class='video' src="./gifOS_UI/assets/forward.svg" alt="video">
+            <video id="videoGif" class='video' src="./gifOS_UI/assets/forward.svg"></video>
+            <div class="capturarPermisos">
+                <div>
+                    <img id="ventana" src="./gifOS_UI/assets/window img.png" alt="icono">
+                </div>
+                <div class="texto" id="texto">
+                    <h2>Aquí podrás crear tus propios guifos</h2>
+                    <p>Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos
+                        personalizados. Los pasos para crear tu guifo son:</p>
+                    <ol>
+                        <li>Dar permisos de acceso a la cámara (sólo por el tiempo de uso).</li>
+                        <li>Capturar tu momento guifo.</li>
+                        <li>Revisar el momento.</li>
+                        <li>Listo para subir y compartir!</li>
+                    </ol>
+                    <p>¿Quieres comenzar a crear tu <b>guifo</b> ahora?</p>
+                </div>
+            </div>
+            <div class="btnComenzarCaptura" id="btnComenzarCaptura">
+                <button class="btnCancelar" id="btnCancelar">Cancelar</button>
+                <button class="btnComenzar" id="btnComenzar">Comenzar</button>
+            </div>
+
+            <div class="capturarGifo" id="capturarGifo">
+
+                <div class="btnCapturar">
+                    <div id="iconoCamara">
+                        <img src="./gifOS_UI/assets/camera.svg" alt="icono">
+                    </div>
+                    <button id="botonCapturar">Capturar</button>
+                </div>
+
+                <div id="iconoCirculo">
+                    <img src="./gifOS_UI/assets/recording.svg" alt="icono">
+                </div>
+
+                <button id="botonListo">Listo</button>
+
+                <button id="botonReCap">Repetir Captura</button>
+
+                <button id="btnSubirGif">Subir Guifo</button>
+
+                <div class="barPg">
+                    <div id="imgForwardTres">
+                        <img src="./gifOS_UI/assets/forward.svg" alt="icono">
+                    </div>
+                    <progress id="barPg" value="0" max="1"></progress>
+                </div>
+
+                <div>
+                    <p id="contadorTiempo">00:00:00</p>
+                </div>
+
+                <div class="subiendoGifo" id="subiendoGifo">
+                    <div class="subiendo">
+                        <img src="./gifOS_UI/assets/globe_img.png" alt="icono">
+                        <h3>Estamos subiendo tu guifo...</h3>
+                        <p id="pTiempo">Tiempo restante: 38 años o algunos minutos</p>
+                    </div>
+                </div>
+
+                <button id="btnCancelarCap">Cancelar</button>
+
+                <div class="copiarDescargarGif" id="copiarDescargarGif">
+                    <div class="gifCreado">
+                        <img id="imgForwardDos" class='video' src="./gifOS_UI/assets/forward.svg" alt="video">
+                    </div>
+                    <div>
+                        <div class="guifExitoso">
+                            <h3>Guifo creado con éxito</h3>
+                            <button id="botonUrl" class="copDes">Copiar Enlace Guifo</button>
+                            <button id="btnGuardar" class="copDes">Descargar Guifo</button>
+                        </div>
+                        <div class="btnListoDos">
+                            <button id="listoDos">Listo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="misGifs">
+            <div class="buscadores">
+                <p id="pMisGifs">Mis Gifos</p>
+            </div>
+            <div id="misGuifos" class="results"></div>
+        </section>
+
+    </main>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.6/RecordRTC.js" type="text/javascript"></script>
+    <script src="constantes.js"></script>
+    <script src="misGifos.js"></script>
+
+</body>
+
+</html>

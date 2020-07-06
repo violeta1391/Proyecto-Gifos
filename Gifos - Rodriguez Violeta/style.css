@@ -1,0 +1,791 @@
+
+@import url('styleNigth.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Chakra Petch', 'sans-serif';
+}
+  
+body{
+    margin: 0px;   
+    background-color: #fff1fd;
+    letter-spacing: 0;   
+}
+
+a {
+    text-decoration:none;
+}
+
+p {
+    margin: 0px;
+    padding-left: 5px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 18px;  
+    color: #110038;
+}
+
+/**//**//* HEADER *//**//**/
+
+/* Header y titulos de las ventanas */
+
+header {
+    width: 100%;
+    height: 23px;
+}
+.titulos {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);  
+    box-shadow: 0 1px 0 0 #110038;
+    margin: auto 0px;   
+}
+.paragraphTi {  
+    font-size: 12px;
+    color: #FFFFFF;  
+    padding-top: 5px;
+    font-family: "Chakra Petch";
+}
+#paragraphBus {
+    font-size: 14px;
+}
+
+/**//**//* NAVBAR *//**//**/
+
+.navbar {
+    margin: 38px 100px 15px 100px;     
+    height: 64px;  
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;    
+}
+
+/* Logo */
+
+.volver {
+    display: inline-flex;
+    justify-self: start; 
+}
+.volver a {
+    margin-left: -70px;
+    padding: 10px;
+}
+
+.logo {
+    width: 102.6px;
+    height: 64px;
+    background-repeat: no-repeat; 
+    background-image: url("gifOS_UI/assets/gifOF_logo.png");
+}
+
+/* Botones navbar */
+
+.navbarButton {
+    height: 36px;
+    text-align: center;
+    border: 1px solid #110038;
+
+    /* Day */
+    color: #110038; 
+    background: #F7C9F3;   
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; 
+}
+
+.navbarButton:hover  {
+    background-color: #E6BBE2 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    border-style: dotted;
+    border-color: #110038;
+}
+.navButtons {
+    display: flex;
+    flex-wrap: nowrap;   
+    height: 36px;     
+}
+
+/* Boton crear giffos */
+
+#crearGifos {
+    margin-right: 10px;
+    width: 144px;
+}
+
+/* Botones cambio de tema */
+
+.dropdown {
+    position: relative;
+    display: inline-block;    
+}  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 170px;
+    height: 102px;  
+    z-index: 1;
+    margin-left: -133px;
+    /* Day */
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#elegirTemaSection {   
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#paragraphTema{
+    width: 131px; 
+    height: 29px;
+    padding-top: 5px;
+    align-content: center; 
+    font-size: 16px;
+    font-family: 'Chakra Petch';    
+}
+#flecha {
+    width: 36px;       
+}
+.cambioTema {
+    width: 150px;
+    height: 36px; 
+    margin: 10px 10px 0px 10px; 
+
+    /* Day */   
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+.cambioTema:hover {
+    /* Day */
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.cambioTema p::first-letter {
+    text-decoration: underline;
+}
+
+/* Boton mis Gif */
+
+.misGifos {
+    letter-spacing: 0;
+    line-height: 18px;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    width: 95px;
+    height: 36px;
+    margin-left: 5px;
+}
+.misGifos:hover{    
+    border: 1px dotted #110038;
+}
+.misGifos:active {
+    box-shadow: none;
+    border: none;
+    /* Day */
+    color:grey;
+}
+.misGifos p::first-letter {
+    text-decoration: underline;
+}
+
+/**//**//* MAIN *//**//**/
+
+main {
+    margin: 0 auto; 
+    width: 1200px;
+}
+
+/* Buscador de gif */
+
+.buscadorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;     
+}
+#buscadorPrincipal {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; 
+}
+.buscador {
+    height: 99px;
+    margin: 0 auto;
+    /* Day */
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+#tituloBuscador {    
+    height: 24px;  
+}
+.buscador input[type=text] {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;   
+    width: 1057px;
+    height: 48px;
+    margin: 12px 5px 12px 0px;
+    padding-left: 5px;
+
+    /* Day */
+    color: #B4B4B4;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+/* Botones desplegables del buscador */
+
+#opcionesBuscador {
+    margin-top: 0;
+    width: 1200px;
+    height: 160px;
+
+    
+    /* Day */
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.buscadorActivo {
+    display: none;
+    visibility: visible;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+
+    /* Day */
+    background-color: #E6E6E6;
+    box-shadow: inset -2px -2px #B4B4B4, inset 2px 2px #FFFFFF;
+    border-right: inset -2px -2px solid #B4B4B4;
+    
+}
+.botonOpciones {
+    margin: 10px 129px 0px 16px;
+    width: 1055px;
+    height: 36px;
+    padding: 8px 0 8px 15px;
+    text-align: left;
+
+    /* Day */
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+.botonOpciones:hover {
+    /* Day */
+    background: #DBDBDB;
+}
+
+/* Boton buscar */
+
+.buscarButton { 
+    width: 102px;
+    height: 36px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin: 20px 0 0 5px;
+    background: transparent;
+
+    /* Day */
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}  
+.buscarButton img {
+    position: relative;
+    left: -5px;
+} 
+
+/* Buscadores */
+
+.buscadores  {
+    height: 32px;
+    margin-top: 60px;  
+
+    /* Day */
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+.buscadores p {
+    padding: 10px;
+    font-family: "ChakraPetch";
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+}
+
+/* Sugerencias */
+
+.gifSugeridos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px;
+}
+.ventanasGif{
+    width: 288px;
+    height: 313px;
+    align-content: center;
+    justify-content: center;
+    
+    /* Day */
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.gifSugeridos img {
+    width: 280px; 
+    height: 280px;
+    align-content: center;
+    position: relative;
+    box-shadow: inset -1px -1px #B4B4B4, inset 1px 1px #FFFFFF;
+    border: 1px solid #808080;
+}
+.tituloSugerencias {
+    padding-top: 5px;
+    width: 282px;
+    height: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #FFFFFF;
+
+    /* Day */
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);        
+    box-shadow: inset -1px -1px #B4B4B4, inset 1px 1px #FFFFFF;
+    border-color: 1px solid #808080;
+}
+.buttonClose {
+    padding-left: 5px;
+    width: 16px;
+    height: 14px;
+    background-repeat: no-repeat; 
+    background-image: url("./gifOS_UI/assets/close.svg");
+}
+.verMas {
+    font-size: 14px;
+    padding: 5px 0 0 10px;
+    width: 81px;
+    height: 34px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin: -6em 0 0 1em;
+    border: transparent;
+    color: #FFFFFF;
+
+    /* Day */
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+
+/* Busquedas */
+
+.busquedas {
+    display: none; 
+}
+
+.botonesHistorial button{
+    background-color: #4180F6;
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+    color: white;
+}
+
+
+/* ************************************** */
+
+/* Resultados: buscador de gif, tendencias y mis Gifos*/
+
+.results {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    margin-top: 15px;    
+    position: relative; 
+}
+.results img {
+    height: 286px;        
+    margin: 5px;    
+}
+.results img:hover {    
+    border: 1px dotted #110038; 
+}
+.pNoVisible {    
+    background-color: #4180f600;   
+    color: #b4b4b400; 
+    margin: -2.4em 0 3em 0.45em; 
+    padding-top: 5px;
+    position: relative;   
+    z-index: 30;
+    width: 97%;       
+    font-size: 12px;
+}
+.pNoVisible:hover {    
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);  
+    color: #FFFFFF;  
+}
+
+
+
+/* ************************************** */
+
+/* MIS GIF0S */
+  
+.crearGifs {
+  width: 684px;
+  height: 386px;
+  position: relative;
+  left: 50%;    
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%); 
+  margin: 1em 0 10em 0;     
+
+  /* Day */
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.crearGifsTitle {
+  height: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #FFFFFF;   
+
+  /* Day */
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);        
+  box-shadow: inset -1px -1px #B4B4B4, inset 1px 1px #FFFFFF;
+  border-color: 1px solid #808080;
+}
+.crearGifsTitle p {
+  padding: 5px 0 0 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.crearGifsTitle img {
+  display: none;
+  margin-right: 10px;
+}
+
+/* Crear Gifos */
+  
+.capturarPermisos {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 30px; 
+    font-size: 14px;
+    color: #110038;    
+    line-height: 28px;
+    font-weight: 500;
+}
+.texto h2 {
+    margin: 0 0 17px 17px;  
+    font-weight: 650; 
+    font-size: 16px;  
+}
+.texto ol {
+    margin-left: 30px;     
+    max-width: 518px;
+}
+.texto p {
+    margin: 0 0 0px 15px;
+    max-width: 518px;    
+}
+.btnComenzarCaptura {
+    position: relative;     
+    left: 0;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+    justify-content: flex-end;        
+}
+.btnComenzarCaptura button {
+    width: 144px;
+    height: 36px;
+    margin: 5px 36px 0px 0;
+}
+.btnComenzarCaptura .btnCancelar {
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+.btnComenzarCaptura .btnCancelar:hover {
+    background: rgb(223, 199, 218);
+}
+.btnComenzarCaptura .btnComenzar {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    margin-left: -25px;
+}
+.btnComenzarCaptura .btnComenzar:hover {
+    background: rgba(200, 154, 197, 0.616);
+}
+
+/* Capturar */
+
+.video {
+    width: 832px;
+    height: 434px;    
+    display: none;
+    margin: .75em .5em 1.5em .5em;
+    background: black;
+    border: 1px solid #979797;
+    -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+#cerrar {
+    margin-top: 5px;
+}
+.btnCapturar {   
+   display: flex;
+   margin: -50px 0 0 650px; 
+}
+#iconoCamara {
+    display: none;
+    padding: 8px 10.5px 7px 10.5px;
+
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+} 
+#botonCapturar {
+    display: none;
+    padding: 9px 39.5px 9px 39.5px;  
+
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+      
+}   
+
+/* Detener captura - Listo */
+
+.capturarGifo {
+    display: flex;
+    align-items: center;
+    margin: 0px 16px 16px 0;
+}   
+#iconoCirculo {
+    display: none;
+    padding: 8px 10.5px 8px 10.5px;
+    margin-top: -50px;
+
+    background: #FF6161;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+}
+#botonListo {
+    display: none;
+    padding: 9px 55px 9px 55px;
+    margin-top: -50px;
+
+    background: #FF6161;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    color: white;
+}
+  
+/* Repetir captura - subir gif */
+  
+#botonReCap {
+    display: none;
+    white-space: nowrap;
+    margin: -40px 10px 0 -90px;
+    padding: 10px;   
+
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}  
+#botonReCap:hover {
+    background: rgba(247, 201, 243, 0.295);
+}  
+#btnSubirGif {
+    display: none;
+    white-space: nowrap;
+    margin: -40px 10px 0 0;   
+    padding: 10px 25px 10px 25px;
+
+    background: #f7c9f3;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;    
+}
+  
+#btnSubirGif:hover {
+    background: #e6bbe2;
+}
+  
+#contadorTiempo {
+    display: none;
+    padding: 7px 17px 7px 21px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+/* Barra de progreso */
+
+.barPg {
+    margin: -50px 0 0 0;
+}
+.barPg #imgForwardTres {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 160px;
+    display: none;
+    justify-content: center; 
+    align-items: center;
+    margin-top: -2px;    
+
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}  
+.capturarGifo .barPg progress {
+    position: absolute;
+    left: 185px;
+    display: none;
+}  
+.capturarGifo .barPg progress[value] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    height: 20px;
+    width: 240px;
+}  
+.capturarGifo .barPg progress[value]::-webkit-progress-bar {
+    background: #B4B4B4;
+    -webkit-box-shadow: 2px 2px 0 0 #FFFCFC, -2px -2px 0 0 #000000;
+            box-shadow: 2px 2px 0 0 #FFFCFC, -2px -2px 0 0 #000000;
+}  
+.capturarGifo .barPg progress[value]::-webkit-progress-value {
+    background: #F7C9F3;
+}
+
+/* Subiendo gif */
+
+.subiendoGifo {
+    height: 434px;
+    width: 820px;
+    display: none;
+    margin: -50px 0 0 -630px;     
+    justify-content: center;
+    align-items: center; 
+    background: #FFFFFF;
+}
+.subiendo {
+    margin: 150px 0 0 220px;
+}  
+.subiendoGifo img {
+    margin-bottom: 1em;
+    margin-left: 150px;
+}  
+.barSubiendo {
+    margin: 50px 0 10px 110px;
+}
+.subiendoGifo h3 {       
+    margin-left: 70px;
+    margin-bottom: 2em;
+}  
+#pTiempo {
+    margin: 90px 0 70px 10px; 
+}
+#btnCancelarCap {
+    display: none;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    padding: .5em 2em .5em 2em;
+
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+/* Guardar, descargar gif */
+  
+.copiarDescargarGif {
+    display: none;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+}
+#imgForwardDos {
+    width: 365px;
+    height: 191px;    
+    display: none;
+    margin: -35px 0 0 -625px;
+
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.guifExitoso {
+    margin: -175px 0 0 -225px; 
+}
+.guifExitoso h3 {
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px; 
+    margin-bottom: 16px;    
+}
+.copDes {
+    width: 256px;
+    height: 36px; 
+     
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    margin-bottom: 1em;
+}
+.copDes:hover {
+    background: #F0E5EE;
+}
+#listoDos {
+    width: 144px;
+    height: 36px;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 120px 30px 0 -110px;
+
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+ 

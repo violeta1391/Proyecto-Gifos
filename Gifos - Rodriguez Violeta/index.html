@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel=stylesheet href="style.css" type="text/css" media=screen>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.6/RecordRTC.js"></script>
+    <title>Gifos</title>
+
+</head>
+
+<body id="body">
+
+    <container id="contenedor">
+
+        <header class="titulos">
+            <p class=paragraphTi>¡Bienvenidos/as a Gifos.com!------Donde los gif están.////// Número de visitas</p>
+        </header>
+
+        <navbar class="navbar">
+            <div class="logo"></div>
+            <container class="navButtons">
+                <a href="./misGifos.html"><button class="navbarButton" id="crearGifos">Crear Gifos</button></a>
+                <div id="elegirTemaSection">
+                    <p class="navbarButton" id="paragraphTema">Elegir Tema</p>
+                    <div class="dropdown">         
+                        <button class="navbarButton" id="flecha"><img src="gifOS_UI/assets/dropdown.svg"></button>
+                        <div class="dropdown-content">
+                            <button class="cambioTema" onclick="myFunDay()"><p>Sailor Day</p></button>
+                            <button class="cambioTema" onclick="myFunNigth()"><p>Sailor Nigth</p></button>
+                        </div>
+                    </div>
+                </div>
+                <a href="./misGifos.html"><button class="misGifos"><p>Mis Gifos</p></button></a>
+            </container>
+        </navbar>
+
+        <main>        
+
+            <section class="buscador">                 
+                <div class="titulos" id="tituloBuscador">
+                    <p class=paragraphTi id="paragraphBus"><b>Buscar</b></p>
+                </div>
+                <container class="buscadorContainer" id="buscadorContainer">
+                    <form id="buscadorPrincipal">
+                        <input id="inputBuscador" class="inputbus" type="text" autocomplete="off" placeholder=" Busca gifs, hashtags, temas, busca lo que quieras…"></imput>
+                        <button type="submit" class="buscarButton" id="buscarButton">
+                            <img src="gifOS_UI/assets/lupa.svg" alt="Lupa" id="lupa">                            
+                            <p>Buscar</p>
+                        </button>
+                    </form>
+                    <div id="opcionesBuscador" class="buscadorActivo">                      
+                        <button class="botonOpciones" id="opUno">Kittens</button>
+                        <button class="botonOpciones" id="opDos">Puppies</button>
+                        <button class="botonOpciones" id="opTres">Unicorns</button>                   
+                    </div>                 
+
+                </container> 
+                
+                <div class="botonesHistorial" id="botonesHistorial"></div>
+            </section>
+            
+            <section class="sugerencias" id="sugerencias">
+                <div class="buscadores">
+                    <p>Hoy te sugerimos</p>
+                </div>
+                <container id="gifSugeridos" class="gifSugeridos">
+                    <div class="ventanasGif">
+                        <div class="tituloSugerencias">
+                            <p>#Jonathanvannes</p>
+                            <div class="buttonClose"></div>
+                        </div>
+                        <div id="jVannes"></div>
+                        <button class="verMas" onclick="verMas('jonathan vanness','Jonathan Vanness')">Ver más...</button>
+                    </div>
+                    <div class="ventanasGif">
+                        <div class="tituloSugerencias">
+                            <p>#SailorMercury</p>
+                            <div class="buttonClose"></div>
+                        </div>
+                        <div id="sailorM"></div>
+                        <button class="verMas" onclick="verMas('sailor mercury','Sailor Mercury')">Ver más...</button>
+                    </div>
+                    <div class="ventanasGif">
+                        <div class="tituloSugerencias">
+                            <p>#FavFive</p>
+                            <div class="buttonClose"></div>
+                        </div>
+                        <div id="fabFive"></div>
+                        <button class="verMas" onclick="verMas('fab five','Fab Five')">Ver más...</button>
+                    </div>
+                    <div class="ventanasGif">
+                        <div class="tituloSugerencias">
+                            <p>#Unicorns&Rainbows</p>
+                            <div class="buttonClose"></div>
+                        </div>
+                        <div id="unicorns"></div>
+                        <button class="verMas" onclick="verMas('unicorns','Unicorns & Rainbows')">Ver más...</button>
+                    </div>
+                </container>
+            </section>
+
+            <section class="tendencias" id="secTend">
+                <div class="buscadores" id="parTendencias">
+                    <p id="tendencias">Tendencias</p>
+                </div>
+                <div id="results" class="results"></div>                
+            </section>
+
+            <section class="busquedas" id="busquedas">
+                <div class="buscadores" id="parBusquedas">
+                    <p id="busqueda"></p>
+                </div>
+                <div id="resultsBusq" class="results"></div>                
+            </section>
+        </main>
+    </container>
+   
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="constantes.js"></script>
+    <script src="gifos.js"></script>
+    
+
+</body>
